@@ -2,4 +2,32 @@
     height: 200px;
     width: 600px;
     border: 1px solid brown;
+    margin-top: 10px;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.body-segment {
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+
+#caterpillar-head {
+    width: 250px;
+    margin-top: 20px;
 }
