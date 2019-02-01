@@ -1,0 +1,33 @@
+button {
+    margin: 4px;
+    padding: 7px;
+}
+
+.segment {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: -10px;
+}
+
+.apple {
+    background: rgb(61, 180, 61);
+}
+
+.banana {
+    background: rgb(216, 216, 96);
+}
+
+.cherry {
+    background: rgb(223, 45, 45);
+}
+
+.grape {
+    background: rgb(192, 72, 192);
+}
+
+.dance {
+    transform: translate(0px, -10px);
+}
