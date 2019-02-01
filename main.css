@@ -1,0 +1,61 @@
+#canvas {
+    height: 200px;
+    width: 600px;
+    border: 1px solid brown;
+    margin-top: 10px;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {
+    color: blue;
+}
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.body-segment {
+    border-radius: 75px;
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+    margin-left: -7px;
+    display: inline-block;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+.color-button {
+    margin: 5px;
+}
+
+.dance-segment {
+    margin-bottom: 20px;
+}
+
+#cat-head {
+    width: 125px;
+    height: auto;
+    margin-top: 30px;
+    margin-right: -15px;
+}
+
+footer {
+    margin-top: 15px;
+}
