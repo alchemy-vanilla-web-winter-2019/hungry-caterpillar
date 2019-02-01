@@ -1,0 +1,53 @@
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: Verdana, sans-serif;
+}
+header {
+    text-align: center;
+}
+.button {
+    text-transform: capitalize;
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    width: 100px;
+    margin: 2px;
+}
+
+/* Fruits */
+.coconut {
+    background-color: peru;
+}
+.jackfruit {
+    background-color: gold;
+}
+.rambutan {
+    background-color: orangered;
+}
+.guava {
+    background-color: lightgreen;
+}
+.mangosteen {
+    background-color: darkmagenta;
+}
+
+/* Caterpillar */
+img {
+    margin-right: -10px;
+}
+#caterpillar {
+    height: 250px;
+}
+.segment {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    margin: -5px;
+    transform: translateY(-10px);
+}
+
+/* Dance */
+.dance {
+    transform: translateY(-30px);
+}
