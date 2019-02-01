@@ -14,12 +14,12 @@ function clickFruit(fruit) {
 function clickDance(fruit) {
     let selector = '.dance';
     let selected = document.querySelectorAll(selector);
-    for (let i = 0; i < selected.length; i++) {
+    for(let i = 0; i < selected.length; i++) {
         selected[i].classList.remove('dance');
     }
     selector = '.segment.' + fruit;
     selected = document.querySelectorAll(selector);
-    for (let i = 0; i < selected.length; i++) {
+    for(let i = 0; i < selected.length; i++) {
         selected[i].classList.add('dance');
     }
 }
@@ -33,7 +33,7 @@ function createButtons(parent, clickFunction, buttonClass) {
         button.value = fruit;
         button.classList.add(buttonClass, fruit);
         parent.appendChild(button);
-        button.addEventListener('click', function() {clickFunction(fruit)});
+        button.addEventListener('click', function() {clickFunction(fruit);});
     }
 }
 
