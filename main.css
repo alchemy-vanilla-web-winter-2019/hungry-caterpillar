@@ -1,8 +1,23 @@
-.green {
-    background-color: green;
+.create-span {
     display: inline-block;
     height: 30px;
     width: 30px;
 
 
+}
+
+.plum-span {
+  background-color: purple;
+}
+
+.fig-span {
+  background-color: brown;
+}
+
+.strawberry-span {
+  background-color: red;
+}
+
+.blackberry-span {
+  background-color: black;
 }
