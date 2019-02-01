@@ -12,18 +12,16 @@ for(let i = 0; i < fruits.length; i++) {
     // iterate over each fruit to ...
         // create a button element
     const fruitButton = document.createElement('button');
-    
-
-        // assign classes
-
 
         // have text show up
-    fruitButton.textContent = fruit;
-    console.log('text', fruitButton);
+    fruitButton.textContent = fruit;    
     
-
         // append
+    fruitButtons.appendChild(fruitButton);
         
+        // assign classes
+    fruitButton.classList.add('fruit-button', fruit);
+    console.log('classes', fruitButton);
     
     
         // 
