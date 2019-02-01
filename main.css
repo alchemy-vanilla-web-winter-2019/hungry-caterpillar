@@ -1,0 +1,37 @@
+body {
+    font-family: courier;
+}
+
+.fruit-button {
+    font-family: courier;
+    font-size: 15px;
+    color: dimgray;
+    margin: 5px;
+    padding: 10px;
+    border: 2px dashed dimgray;
+}
+
+.strawberry {
+    background: tomato;
+}
+
+.orange {
+    background: darkorange;
+}
+
+.banana {
+    background: khaki;
+}
+
+.pear {
+    background: yellowgreen;
+}
+
+.blueberry {
+    background: skyblue;
+}
+
+.grape {
+    background: mediumpurple;
+}
+
