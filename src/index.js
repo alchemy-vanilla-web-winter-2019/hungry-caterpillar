@@ -1,15 +1,20 @@
 
-const fruits = ['apple', 'pineapple', 'pear', 'grape', 'raspberry'];
-const fruitNode = document.getElementById('fruit-buttons');
+const garbages = ['apple', 'kiwi', 'pear', 'grape', 'raspberry'];
+const garbageNode = document.getElementById('garbage-buttons');
 const caterNode = document.getElementById('caterpillar');
 
-for(let index = 0; index < fruits.length; index++) {
-    let fruit = fruits[index];
+for(let index = 0; index < garbages.length; index++) {
+    let garbage = garbages[index];
     
     const button = document.createElement('button');
-    fruitNode.appendChild(button);
-    button.textContent = fruit;
-    button.classList.add('fruit-button');
+    garbageNode.appendChild(button);
+    button.textContent = garbage;
+    button.classList.add(garbage, 'garbage-buttons');
     
-
+    button.addEventListener('click', function(){
+        const garbageSpan = document.createElement('span');
+        caterNode.appendChild(garbageSpan);
+        garbageSpan.classList.add(garbage, 'garbage-span');
+        caterNode.appendChild(garbageSpan);
+    });
 }
