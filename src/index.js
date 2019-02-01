@@ -21,12 +21,17 @@ for(let index = 0; index < colors.length; index++) {
     colorButtonNode.classList.add('color-button', color);
 
     colorButtonNode.addEventListener('click', function() {
-        //paint(color);
+        paint(color);
     });
     colorButtonsNode.appendChild(colorButtonNode);
 }
 
-
+function paint(color) {
+    const bodyColor = document.createElement('span');
+    bodyColor.classList.add('color-block', color);
+    
+    canvasNode.appendChild(bodyColor);
+}
 
 
 
