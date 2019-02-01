@@ -1,10 +1,3 @@
-#caterpillar-head {
-    height: 50px;
-    width: 50px;
-    margin-top: 20px;
-    margin-right: -5px
-}
-
 h1 {
     font-family: monospace;
 }
@@ -17,21 +10,6 @@ p {
     height: 100px;
     width: 400px;
     border: 1px solid black;
-}
-
-.color-button {
-    margin-right: 20px;
-    height: 30px;
-    width: 60px;
-}
-
-.body-segment {
-    height: 30px;
-    width: 30px;
-    border-radius: 50px;
-    display: inline-block;
-    margin-top: 40px;
-    margin-left: -5px;
 }
 
 .red {
@@ -50,15 +28,37 @@ p {
     background: yellow;
 }
 
-.dance-segment {
-    margin-bottom: 10px;
+.body-segment {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: -5px;
 }
 
-.transform-button {
-    margin-right: 20px;
+.dance-segment {
+    margin-bottom: 10px;
 }
 
 img {
     width: 20px;
     margin: 5px;
+}
+
+.color-button {
+    margin-right: 20px;
+    height: 30px;
+    width: 60px;
+}
+
+#caterpillar-head {
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    margin-right: -5px
+}
+
+.transform-button {
+    margin-right: 20px;
 }
