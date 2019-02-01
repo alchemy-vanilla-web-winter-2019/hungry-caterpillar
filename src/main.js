@@ -1,5 +1,5 @@
 const fruitButtonNode = document.getElementById('fruit-buttons');
-const head = document.getElementById('head');
+const canvas = document.getElementById('canvas');
 
 
 const colors = [
@@ -26,14 +26,18 @@ for(let i = 0; i < colors.length; i++) {
     fruitButton.appendChild(fruitImage);
 
     fruitButton.addEventListener('click', function() {
-        growCaterpiller(color);
-        console.log(color);
+        growCaterpillar(color);
     });
 
     fruitButtonNode.appendChild(fruitButton);
 }
 
 function growCaterpillar(color) {
-    const bodySegment = document.createElement('span');
-    bodySegment.classList.add('body-segment', color);
+    const countSegs = document.querySelectorAll('.body-segment').length;
+    console.log(countSegs);
+    if(countSegs < 6){
+        const bodySegment = document.createElement('span');
+        bodySegment.classList.add('body-segment', color);
+        canvas.appendChild(bodySegment);
+    }
 }

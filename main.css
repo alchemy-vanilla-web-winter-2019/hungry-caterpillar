@@ -18,9 +18,11 @@ img {
 }
 
 .body-segment {
-    height: 150px;
-    width: 150px;
+    height: 90px;
+    width: 90px;
     border-radius: 150px;
+    display: inline-block;
+    margin-left: -35px;
 }
 
 .red {
@@ -37,4 +39,8 @@ img {
 
 .purple {
     background: purple;
+}
+
+.dance {
+    margin-bottom: 20px;
 }
