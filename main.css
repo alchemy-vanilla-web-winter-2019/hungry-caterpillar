@@ -1,10 +1,76 @@
 #canvas{
     width: 400px;
-    height: 100px;
+    height: 75px;
     overflow: none;
     border: black 1px solid;
+    display: inline-block;
 }
 
-img{
-    height: 100px;
+
+#face{
+    height: 75px;
 }
+
+button{
+    height: 50px;
+    display: inline-block;
+    margin: 5px;
+}
+.pickle-button{
+    background-image: url(/assets/pickle.jpg);
+    background-size: cover;
+}
+
+.chocolate-button{
+    background-image: url(/assets/chocolate.png);
+    background-size: cover;
+}
+.cake-button{
+    background-image: url(/assets/cake.png);
+    background-size: cover;
+}
+.watermelon-button{
+    background-image: url(/assets/watermelon.jpg);
+    background-size: cover;
+}
+.cheese-button{
+    background-image: url(/assets/cheese.jpg);
+    background-size: cover;
+}
+.sausage-button{
+    background-image: url(/assets/sausage.png);
+    background-size: cover;
+}
+
+.pickle{
+    background-color: green;
+}
+
+.chocolate{
+    background-color: chocolate;
+}
+
+.cake{
+    background-color: whitesmoke;
+}
+
+.watermelon{
+    background-color: pink;
+}
+
+.cheese{
+    background-color: yellow;
+}
+
+.sausage{
+    background-color: sienna;
+}
+
+.body-span{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+
+}
+
