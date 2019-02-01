@@ -25,7 +25,6 @@ function paint(fruit) {
     bodySegment.classList.add('body-segment', fruit);
 
     canvasNode.appendChild(bodySegment);
-    console.log(bodySegment);
 }
 
 for(let index = 0; index < fruits.length; index++) {
@@ -50,9 +49,14 @@ function dance(fruit) {
 
     for(let index = 0; index < allBodySegments.length; index++) {
         allBodySegments[index].classList.remove('dance-segment');
+        console.log(allBodySegments.length);
+
     }
 
     for(let index = 0; index < bodySegments.length; index++) {
         bodySegments[index].classList.add('dance-segment');
+        console.log(bodySegments.length);
+
     }
+
 }
