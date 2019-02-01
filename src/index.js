@@ -9,11 +9,19 @@ function clickFruit(fruit) {
     segment.classList.add('segment');
     segment.classList.add(fruit);
     bugBody.appendChild(segment);
-    console.log('fruit clicked');
 }
 
-function clickDance() {
-
+function clickDance(fruit) {
+    let selector = '.dance';
+    let selected = document.querySelectorAll(selector);
+    for (let i = 0; i < selected.length; i++) {
+        selected[i].classList.remove('dance');
+    }
+    selector = '.segment.' + fruit;
+    selected = document.querySelectorAll(selector);
+    for (let i = 0; i < selected.length; i++) {
+        selected[i].classList.add('dance');
+    }
 }
 
 function createButtons(parent, clickFunction, buttonClass) {
@@ -23,7 +31,7 @@ function createButtons(parent, clickFunction, buttonClass) {
 
         button.textContent = fruit;
         button.value = fruit;
-        button.classList.add(buttonClass);
+        button.classList.add(buttonClass, fruit);
         parent.appendChild(button);
         button.addEventListener('click', function() {clickFunction(fruit)});
     }
