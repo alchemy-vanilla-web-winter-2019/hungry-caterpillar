@@ -1,31 +1,26 @@
 * {
     margin: 0;
     border: 0;
+    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    background: forestgreen;
 }
 
 h1 {
     text-align: center;
 }
 
-#feed-buttons {
-    margin: 10px;
-    border: 2px solid black;
-    text-align: center;
+h2 {
+    background: white;
 }
 
-#bug-body {
+section {
     margin: 10px;
     border: 2px solid black;
+    background: white;
 }
 
-#dance-buttons {
-    margin: 10px;
-    border: 2px solid black;
-    text-align: center;
-}
-
-#bug-head {
-    height: 100px;
+button {
+    font-size: 14px;
 }
 
 .fruit-button {
@@ -76,4 +71,30 @@ h1 {
 
 .dance {
     transform: translate(0px, -10px);
+}
+
+.Clear {
+    border: 2px solid black;
+    margin: 5px;
+    height: 50px;
+    width: 200px;
+    background: white;
+}
+
+#feed-buttons {
+    text-align: center;
+}
+
+#clear-button-section {
+    border: none;
+    text-align: center;
+    background: forestgreen;
+}
+
+#dance-buttons {
+    text-align: center;
+}
+
+#bug-head {
+    height: 100px;
 }
