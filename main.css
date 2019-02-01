@@ -2,6 +2,7 @@
     height: 50px;
     width: 50px;
     margin-top: 20px;
+    margin-right: -5px
 }
 
 h1 {
@@ -50,7 +51,7 @@ p {
 }
 
 .dance-segment {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .transform-button {

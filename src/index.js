@@ -21,7 +21,6 @@ for(let index = 0; index < colors.length; index++) {
     const colorButtonNode = document.createElement('button');
     const imgNode = document.createElement('img');
     imgNode.src = imgSrc[index];
-    // colorButtonNode.textContent = color;
     colorButtonNode.value = color;
     colorButtonNode.classList.add('color-button');
 
