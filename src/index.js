@@ -8,10 +8,12 @@ const fruitButtons = document.getElementById('fruit-buttons');
 for(let i = 0; i < fruits.length; i++) {
     // create variable for each fruit
     const fruit = fruits[i];
-    console.log(fruit);
 
     // iterate over each fruit to ...
         // create a button
+    const fruitButton = document.createElement('fruit-button');
+    console.log('create button', fruitButton);
+
         // assign classes
         // have text show up
         // 
