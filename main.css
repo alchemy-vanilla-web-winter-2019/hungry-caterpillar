@@ -12,12 +12,16 @@ p {
     border: 1px solid black;
 }
 
+.color-button {
+    margin-right: 20px;
+}
 .body-segment {
     height: 30px;
     width: 30px;
     border-radius: 50px;
     display: inline-block;
     margin-top: 40px;
+    margin-left: -8px;
 }
 
 .red {
@@ -34,4 +38,12 @@ p {
 
 .yellow {
     background: yellow;
+}
+
+.dance-segment {
+    margin-bottom: 5px;
+}
+
+.transform-button {
+    margin-right: 20px;
 }

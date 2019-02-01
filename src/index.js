@@ -41,7 +41,7 @@ for(let index = 0; index < colors.length; index++) {
         dance(color);
     });
 
-    colorButtonsNode.appendChild(transformButtonNode);
+    transformButtonsNode.appendChild(transformButtonNode);
 }
 
 function dance(color) {
