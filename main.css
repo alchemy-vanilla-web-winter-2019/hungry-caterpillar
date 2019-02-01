@@ -1,9 +1,26 @@
+h1 {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+
 #canvas{
     width: 400px;
     height: 75px;
     overflow: none;
     border: black 1px solid;
-    display: inline-block;
+    margin: auto;
+}
+
+#food-buttons{
+    text-align: center;
+    margin: 15px;
+}
+#dance-buttons{
+    text-align: center;
+    margin: 15px;
+
 }
 
 
@@ -11,8 +28,9 @@
     height: 75px;
 }
 
-button{
+.food-button{
     height: 50px;
+    width: 75px;
     display: inline-block;
     margin: 5px;
 }
@@ -74,3 +92,11 @@ button{
 
 }
 
+.dance-button{
+    border-radius: 12px;
+    height: 30px;
+}
+
+.dance-span{
+    transform: translate(0px, -50%);
+}

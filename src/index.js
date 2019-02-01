@@ -19,13 +19,12 @@ for(let index = 0; index < foods.length; index++){
         const bodySpan = document.createElement('span');
         bodyCanvasNode.appendChild(bodySpan);
         bodySpan.classList.add('body-span', food + '-span', food);
-        console.log(food);
     });
 
 }
 
-for(let j = 0; j < foods.length; j++){
-    let food = foods[j];
+for(let i = 0; i < foods.length; i++){
+    let food = foods[i];
 
     const danceButtons = document.createElement('button');
     danceButtonsNode.appendChild(danceButtons);
@@ -33,6 +32,22 @@ for(let j = 0; j < foods.length; j++){
     danceButtons.textContent = 'move ' + food;
     danceButtons.classList.add('dance-button', food);
 
+    danceButtons.addEventListener('click', function(){
+        // first loop through food spans and remove 'dance-span' to reset.
+        var danceSpanArray = document.querySelectorAll('.body-span');
+        for(let l = 0; l < foods.length; l++){
+            danceSpanArray[l].classList.remove('dance-span');
+        }
     
+        //loop through food spans and apply 'dance-span' css property.
+        var danceSpan = document.querySelectorAll('.' + food + '-span');
+        for(let i = 0; i < foods.length; i++){
+            danceSpan[i].classList.add('dance-span');
+            console.log(food + '-span');
+        }
+        
+    });
+
+
 }
   
