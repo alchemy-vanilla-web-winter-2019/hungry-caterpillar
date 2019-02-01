@@ -13,7 +13,10 @@ for(let index = 0; index < fruits.length; index++) {
     fruitButtonNode.classList.add(fruit, 'fruit-button');
 
     fruitButtonNode.addEventListener('click', function(){
-        paint(fruit);
+        const countSegments = document.querySelectorAll('.body-segment').length;
+        if(countSegments < 6) {
+            paint(fruit);
+        }
     });
 
     fruitButtonsNode.appendChild(fruitButtonNode);
@@ -30,12 +33,12 @@ function paint(fruit) {
 for(let index = 0; index < fruits.length; index++) {
     let fruit = fruits[index];
     const danceButtonNode = document.createElement('button');
-
-    danceButtonNode.value = fruit;
     danceButtonNode.textContent = fruit;
+    danceButtonNode.value = fruit;
     danceButtonNode.classList.add(fruit, 'dance-button');
 
-    danceButtonNode.addEventListener('click', function(){
+    danceButtonNode.addEventListener('click', function() {
+        console.log(fruit);
         dance(fruit);
     });
 
@@ -49,14 +52,10 @@ function dance(fruit) {
 
     for(let index = 0; index < allBodySegments.length; index++) {
         allBodySegments[index].classList.remove('dance-segment');
-        console.log(allBodySegments.length);
 
     }
 
     for(let index = 0; index < bodySegments.length; index++) {
         bodySegments[index].classList.add('dance-segment');
-        console.log(bodySegments.length);
-
     }
-
 }
