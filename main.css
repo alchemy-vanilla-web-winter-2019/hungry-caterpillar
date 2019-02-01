@@ -2,8 +2,15 @@
     display: inline-block;
     height: 30px;
     width: 30px;
+}
 
+#cater-face {
+  height: 80px;
+  width: 80px;
+}
 
+#caterpillar-container {
+  padding: 30px;
 }
 
 .plum-span {
