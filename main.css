@@ -22,12 +22,20 @@
 }
 
 .body-segment {
-    border-radius: 30px;
-    margin-top: 20px;
-    margin-left: -10px;
+    border-radius: 75px;
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: -7px;
+    display: inline-block;
 }
 
-#caterpillar-head {
-    width: 250px;
-    margin-top: 20px;
+.dance-segment {
+    margin-bottom: 40px;
+}
+#cat-head {
+    width: 125px;
+    margin-top: 30px;
+    margin-right: -15px;
+    
 }
