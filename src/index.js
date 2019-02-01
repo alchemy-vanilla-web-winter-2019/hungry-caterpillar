@@ -10,13 +10,19 @@ for(let i = 0; i < fruits.length; i++) {
     const fruit = fruits[i];
 
     // iterate over each fruit to ...
-        // create a button
-    const fruitButton = document.createElement('fruit-button');
+        // create a button element
+    const fruitButton = document.createElement('button');
+    
 
         // assign classes
+
+
         // have text show up
     fruitButton.textContent = fruit;
-    console.log('fruit text', fruitButton);
+    console.log('text', fruitButton);
+    
+
+        // append
         
     
     
