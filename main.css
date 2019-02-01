@@ -1,3 +1,8 @@
+button {
+    margin: 4px;
+    padding: 7px;
+}
+
 .segment {
     height: 50px;
     width: 50px;
@@ -8,19 +13,19 @@
 }
 
 .apple {
-    background: green;
+    background: rgb(61, 180, 61);
 }
 
 .banana {
-    background: yellow;
+    background: rgb(216, 216, 96);
 }
 
 .cherry {
-    background: red;
+    background: rgb(223, 45, 45);
 }
 
 .grape {
-    background: purple;
+    background: rgb(192, 72, 192);
 }
 
 .dance {
