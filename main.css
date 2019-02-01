@@ -11,3 +11,27 @@ p {
     width: 400px;
     border: 1px solid black;
 }
+
+.body-segment {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.red {
+    background: red;
+}
+
+.blue {
+    background: blue;
+}
+
+.green {
+    background: green;
+}
+
+.yellow {
+    background: yellow;
+}
