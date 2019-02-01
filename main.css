@@ -1,0 +1,9 @@
+#dragonhead {
+    width: 80px;
+    height: auto;
+    z-index: 5;
+}
+
+body {
+    background: slategray;
+}
