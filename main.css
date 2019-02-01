@@ -11,6 +11,8 @@
 
 #caterpillar-container {
   padding: 30px;
+  height: 50px;
+  overflow: hidden;
 }
 
 .plum-span {
