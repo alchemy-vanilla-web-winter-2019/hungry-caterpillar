@@ -39,8 +39,8 @@ for(let index = 0; index < colors.length; index++) {
                     
     transformButtonNode.addEventListener('click', function() {
         dance(color);
+        console.log(color);
     });                   
-    console.log(transformNode);
     transformNode.appendChild(transformButtonNode);
 }
 
