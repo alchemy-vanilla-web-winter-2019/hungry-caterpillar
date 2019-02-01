@@ -25,17 +25,27 @@
     border-radius: 75px;
     height: 100px;
     width: 100px;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: -7px;
     display: inline-block;
 }
 
-.dance-segment {
-    margin-bottom: 40px;
+img {
+    height: 50px;
+    width: 50px;
 }
+
+.color-button {
+    margin: 5px;
+}
+
+.dance-segment {
+    margin-bottom: 15px;
+}
+
 #cat-head {
     width: 125px;
+    height: auto;
     margin-top: 30px;
     margin-right: -15px;
-    
 }
