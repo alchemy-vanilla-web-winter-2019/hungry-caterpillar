@@ -6,7 +6,14 @@ h1, h2, p {
     margin-left: 20px;
 }
 
-.fruit-button {
+img {
+    display: flex;
+    justify-content: flex-start;
+    height: 200px;
+    width: 200px;
+}
+
+.color-button {
     font-family: courier;
     font-size: 15px;
     margin: 10px 0 10px 20px;
@@ -14,7 +21,7 @@ h1, h2, p {
     border: 2px dashed dimgray;
 }
 
-.strawberry {
+.red {
     background: tomato;
 }
 
@@ -22,19 +29,19 @@ h1, h2, p {
     background: darkorange;
 }
 
-.banana {
+.yellow {
     background: khaki;
 }
 
-.pear {
+.green {
     background: yellowgreen;
 }
 
-.blueberry {
+.blue {
     background: skyblue;
 }
 
-.grape {
+.purple {
     background: mediumpurple;
 }
 

@@ -1,18 +1,18 @@
-const fruits = ['strawberry', 'orange', 'banana', 'pear', 'blueberry', 'grape'];
-const fruitButtons = document.getElementById('fruit-buttons');
+const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
+const colorButtons = document.getElementById('color-buttons');
 
-for(let i = 0; i < fruits.length; i++) {
-    const fruit = fruits[i];
-    const fruitButton = document.createElement('button');
-    fruitButton.textContent = fruit;    
-    fruitButtons.appendChild(fruitButton);
-    fruitButton.classList.add('fruit-button', fruit);
+for(let i = 0; i < colors.length; i++) {
+    const color = colors[i];
+    const colorButton = document.createElement('button');
+    colorButton.textContent = color;    
+    colorButtons.appendChild(colorButton);
+    colorButton.classList.add('color-button', color);
 
-    fruitButton.addEventListener('click', function(event) {
+    colorButton.addEventListener('click', function(event) {
         
     });
 
-    // iterate over each fruit to ...
+    // iterate over each color to ...
         // create a button element - done
         // have text show up - done
         // append - done
@@ -20,15 +20,13 @@ for(let i = 0; i < fruits.length; i++) {
         // eventListener with function to add segment
 }
 
-for(let i = 0; i < fruits.length; i++) {
-    const fruit = fruits[i];
+for(let i = 0; i < colors.length; i++) {
+    const color = colors[i];
     console
-    // iterate over each fruit to ...
+    // iterate over each color to ...
         // create a button element
         // have text show up
         // append
         // assign classes
-        // eventListener
-
-        // function to make segment dance
+        // eventListener with function to make segment dance
 }
