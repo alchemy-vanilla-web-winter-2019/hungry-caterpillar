@@ -1,4 +1,45 @@
+body {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#cater-face {
+    height: 100px;
+    width: 100px;
+}
+
 .fruit-buttons {
-    margin: 5px;
+    margin: 5px;   
+}
+
+
+.blueberry {
+    background-color: blue;
     
 }
+
+.raspberry {
+    background-color: red;
+}
+
+.mango {
+    background-color: rgb(37, 185, 74);
+}
+
+.pineapple {
+    background-color: yellow;
+}
+
+.pear {
+    background-color: yellowgreen;
+}
+
+.fruit-span {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin:-.5%;
+
+}
+

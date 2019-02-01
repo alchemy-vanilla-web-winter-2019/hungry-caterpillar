@@ -1,4 +1,4 @@
-const fruits = ['blueberry', 'raspberry', 'mango', 'pineapple', 'pear' ];
+const fruits = ['blueberry', 'raspberry', 'mango', 'pineapple', 'pear'];
 const fruitNode = document.getElementById('fruit-buttons');
 const caterpillarNode = document.getElementById('caterpillar');
 
@@ -12,9 +12,14 @@ for(let index = 0; index < fruits.length; index++) {
     button.textContent = fruit;
     button.classList.add(fruit, 'fruit-buttons');
 
-    button.addEventListener('click', fruits); 
-    console.log('hi');
-    
+    button.addEventListener('click', function(){
+        const fruitSpan = document.createElement('span');
+        caterpillarNode.appendChild(fruitSpan);
+        fruitSpan.classList.add('fruit-span', fruit); 
+        caterpillarNode.appendChild(fruitSpan);
+
+    }); 
+
 
 
 
