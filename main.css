@@ -6,10 +6,10 @@ h4 {
 }
 
 #canvas{
-    width: 400px;
-    height: 75px;
+    width: 600px;
+    height: 125px;
     overflow: none;
-    border: black 1px solid;
+   
     margin: auto;
 }
 
@@ -25,14 +25,15 @@ h4 {
 
 
 #face{
-    height: 75px;
+    height: 125px;
 }
 
 .food-button{
-    height: 50px;
-    width: 75px;
+    height: 75px;
+    width: 100px;
     display: inline-block;
     margin: 5px;
+    border-radius: 12%
 }
 .pickle-button{
     background-image: url(/assets/pickle.jpg);
@@ -85,10 +86,11 @@ h4 {
 }
 
 .body-span{
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     display: inline-block;
     border-radius: 50%;
+    margin: -3px;
 
 }
 

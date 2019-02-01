@@ -43,7 +43,6 @@ for(let i = 0; i < foods.length; i++){
         var danceSpan = document.querySelectorAll('.' + food + '-span');
         for(let i = 0; i < foods.length; i++){
             danceSpan[i].classList.add('dance-span');
-            console.log(food + '-span');
         }
         
     });
