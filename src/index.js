@@ -4,9 +4,10 @@ const danceButtons = document.getElementById('dance-buttons');
 const bugBody = document.getElementById('bug-body');
 
 
-function clickFruit() {
-    const segment = document.createElement(span);
+function clickFruit(fruit) {
+    const segment = document.createElement('span');
     segment.classList.add('segment');
+    segment.classList.add(fruit);
     bugBody.appendChild(segment);
     console.log('fruit clicked');
 }
@@ -24,7 +25,7 @@ function createButtons(parent, clickFunction, buttonClass) {
         button.value = fruit;
         button.classList.add(buttonClass);
         parent.appendChild(button);
-        button.addEventListener('click', clickFunction);
+        button.addEventListener('click', function() {clickFunction(fruit)});
     }
 }
 
