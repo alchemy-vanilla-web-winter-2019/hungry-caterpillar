@@ -38,8 +38,22 @@ for(let index = 0; index < colors.length; index++) {
     transformButtonNode.classList.add('transform-button');
 
     transformButtonNode.addEventListener('click', function() {
-        
+        dance(color);
     });
 
     colorButtonsNode.appendChild(transformButtonNode);
+}
+
+function dance(color) {
+    const selector = '.body-segment.' + color;
+    const bodySegments = document.querySelectorAll(selector);
+    const allBodySegments = document.querySelectorAll('.body-segment');
+
+    for(let index = 0; index < allBodySegments.length; index++) {
+        allBodySegments[index].classList.remove('dance-segment');
+    }
+
+    for(let index = 0; index < bodySegments.length; index++) {
+        bodySegments[index].classList.add('dance-segment');
+    }
 }
