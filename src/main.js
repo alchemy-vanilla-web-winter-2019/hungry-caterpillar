@@ -36,7 +36,6 @@ for(let i = 0; i < colors.length; i++) {
 
 function growCaterpillar(color) {
     const countSegs = document.querySelectorAll('.body-segment').length;
-    console.log(countSegs);
     if(countSegs < 6){
         const bodySegment = document.createElement('span');
         bodySegment.classList.add('body-segment', color);
