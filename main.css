@@ -4,10 +4,11 @@
     border: 1px solid black;
 }
 
-.fruit-button {
-    height: 100px;
-    width: 100px;
+.body-segment {
+    height: 80px;
+    width: 80px;
     display: inline-block;
+    margin-top: 50px;
 }
 
 .apple {
@@ -26,5 +27,8 @@
     background: darkred;
 }
 
-
+.dance-segment {
+    background: black;
+    margin-bottom: 25px;
+}
 
