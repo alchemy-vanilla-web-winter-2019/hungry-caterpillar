@@ -1,0 +1,30 @@
+#canvas {
+    height: 200px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+.fruit-button {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+.apple {
+    background: red;
+}
+
+.kiwi {
+    background: green;
+}
+
+.banana {
+    background: yellow;
+}
+
+.cherry {
+    background: darkred;
+}
+
+
+

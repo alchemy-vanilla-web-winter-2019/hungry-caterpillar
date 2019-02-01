@@ -19,9 +19,18 @@ for(let index = 0; index < fruits.length; index++) {
     fruitNode.id = fruit;
 
     fruitNode.addEventListener('click', function(){
-        console.log(fruitNode);
+        paint(fruit);
     });
 
     fruitButtonsNode.appendChild(fruitNode);
 
+}
+
+function paint(fruit) {
+    const bodySegment = document.createElement('span');
+
+    bodySegment.classList.add(fruit, 'fruit-button');
+
+    canvasNode.appendChild(bodySegment);
+    console.log(bodySegment);
 }
