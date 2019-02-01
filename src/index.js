@@ -1,0 +1,1 @@
+var foods = ['pickle', 'chocolate', 'cake', 'watermelon', 'cheese', 'saussage'];
