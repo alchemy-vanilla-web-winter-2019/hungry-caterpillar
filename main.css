@@ -1,0 +1,13 @@
+h1 {
+    font-family: monospace;
+}
+
+p {
+    font-family: monospace;
+}
+
+#canvas {
+    height: 100px;
+    width: 400px;
+    border: 1px solid black;
+}
