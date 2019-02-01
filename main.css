@@ -1,0 +1,58 @@
+body {
+    font-family: 
+}
+
+#canvas {
+    height: 200px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+button {
+    margin: 5px;
+    border: 1px solid black;
+    height: 40px;
+    width: 60px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+img {
+    height: 35px;
+}
+
+#head {
+    height: 150px;
+}
+
+.body-segment {
+    height: 90px;
+    width: 90px;
+    border-radius: 150px;
+    display: inline-block;
+    margin-left: -35px;
+}
+
+.red {
+    background: red;
+}
+
+.blue {
+    background: blue;
+}
+
+.green {
+    background: green;
+}
+
+.purple {
+    background: purple;
+}
+
+.dance {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 40px;
+}
