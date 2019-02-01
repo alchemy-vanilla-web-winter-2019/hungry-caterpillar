@@ -27,7 +27,7 @@ for(let index = 0; index < colors.length; index++) {
 
     colorButtonNode.addEventListener('click', function() {
         const countSegments = document.querySelectorAll('.body-segment').length;
-        if(countSegments < 17) {
+        if(countSegments < 13) {
             paint(color);
         }
     });
@@ -47,12 +47,11 @@ for(let index = 0; index < colors.length; index++) {
     const transformButtonNode = document.createElement('button');
     transformButtonNode.textContent = color;
     transformButtonNode.value = color;
-    transformButtonNode.classList.add('transform-button');
+    transformButtonNode.classList.add('transform-button', color);
 
     transformButtonNode.addEventListener('click', function() {
         dance(color);
     });
-
     transformButtonsNode.appendChild(transformButtonNode);
 }
 
