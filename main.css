@@ -5,6 +5,12 @@
     margin-top: 10px;
 }
 
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {
+    color: blue;
+}
 .red {
     background-color: red;
 }
@@ -40,7 +46,7 @@ img {
 }
 
 .dance-segment {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 #cat-head {
@@ -48,4 +54,8 @@ img {
     height: auto;
     margin-top: 30px;
     margin-right: -15px;
+}
+
+footer {
+    margin-top: 15px;
 }

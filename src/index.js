@@ -17,12 +17,12 @@ const imgSrc = [
 ];
 
 for(let index = 0; index < colors.length; index++) {
-    let color = colors[index]; //the color array index = color
-    const colorButtonNode = document.createElement('button'); //colorButtonNode is a new variable and we created a button element that it corresponds to
-    const imgNode = document.createElement('img'); //creating the images in html and assigning them the imgNode variable
+    let color = colors[index]; 
+    const colorButtonNode = document.createElement('button'); 
+    const imgNode = document.createElement('img'); 
     imgNode.src = imgSrc[index];
-    colorButtonNode.value = color; //the color buttons will have a value of each color
-    colorButtonNode.classList.add(color, 'color-button'); //adding the 'color-button' and color class to the colorButtonNodes
+    colorButtonNode.value = color;
+    colorButtonNode.classList.add(color, 'color-button'); 
 
     colorButtonNode.addEventListener('click', function() {
         const segmentCount = document.querySelectorAll('.body-segment').length;
@@ -33,7 +33,7 @@ for(let index = 0; index < colors.length; index++) {
     
     colorButtonsNode.appendChild(colorButtonNode);
     colorButtonNode.appendChild(imgNode);
-    console.log(paint);
+
 }
 
 function paint(color) {
@@ -43,11 +43,11 @@ function paint(color) {
 }
 
 for(let index = 0; index < colors.length; index++) {
-    let color = colors[index]; //the color array index = color
-    const transformButtonNode = document.createElement('button'); //transormNode is a new variable and we created a button element that it corresponds to
-    transformButtonNode.textContent = color; //need to change this to image
-    transformButtonNode.value = color; //the color buttons will have a value of each color
-    transformButtonNode.classList.add('transform-button', color); //adding the 'color-button' and color class to the colorButtonNodes
+    let color = colors[index]; 
+    const transformButtonNode = document.createElement('button'); 
+    transformButtonNode.textContent = color;
+    transformButtonNode.value = color;
+    transformButtonNode.classList.add('transform-button', color);
                     
     transformButtonNode.addEventListener('click', function() {
         dance(color);
@@ -56,9 +56,9 @@ for(let index = 0; index < colors.length; index++) {
 }
 
 function dance(color) {
-    const selector = '.body-segment.' + color; //selecting by body segment and color
-    const bodySegments = document.querySelectorAll(selector);//setting bodySegments as a variable and equating it to the selector I just created
-    const allBodySegments = document.querySelectorAll('.body-segment'); //setting allBodySegments as a selector and equating it to the body-segment class (not just color - this will move all of them down when transform buttons are pressed)
+    const selector = '.body-segment.' + color; 
+    const bodySegments = document.querySelectorAll(selector);
+    const allBodySegments = document.querySelectorAll('.body-segment'); 
 
     for(let index = 0; index < allBodySegments.length; index++) {
         allBodySegments[index].classList.remove('dance-segment');
@@ -66,7 +66,6 @@ function dance(color) {
     for(let index = 0; index < bodySegments.length; index++) {
         bodySegments[index].classList.add('dance-segment');
     }
-
-    
+       
 }
 
