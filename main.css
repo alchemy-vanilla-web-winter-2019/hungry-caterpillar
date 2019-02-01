@@ -1,0 +1,52 @@
+#canvas {
+ width: 600px;
+ height: 300px;
+ border: 1px dotted black;
+ background: aquamarine;
+
+}
+
+.color-block {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border-radius: 150px;
+    margin-top: 75px;
+    margin-right: -25px;
+}
+
+h1 {
+    font-family: fantasy;
+    background-color:salmon;
+    color: red;
+    text-align: center;
+    
+}
+
+.black {
+    background: black;
+
+}
+
+.red {
+    background: red;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.white {
+    background: white;
+}
+
+button {
+    background: black;
+    color: white;
+}
+
+.wiggle-button {
+    margin: 1px;
+    background: black;
+    color: white;
+}
