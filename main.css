@@ -1,3 +1,9 @@
+#caterpillar-head {
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+}
+
 h1 {
     font-family: monospace;
 }
@@ -14,7 +20,10 @@ p {
 
 .color-button {
     margin-right: 20px;
+    height: 30px;
+    width: 60px;
 }
+
 .body-segment {
     height: 30px;
     width: 30px;
@@ -46,4 +55,9 @@ p {
 
 .transform-button {
     margin-right: 20px;
+}
+
+img {
+    width: 20px;
+    margin: 5px;
 }

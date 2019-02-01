@@ -9,17 +9,29 @@ const colors = [
     'yellow'
 ];
 
+const imgSrc = [
+    '../assets/apple.png',
+    '../assets/blueberry.png',
+    '../assets/kiwi.png',
+    '../assets/bananas.png'
+];
+
 for(let index = 0; index < colors.length; index++) {
     let color = colors[index];
     const colorButtonNode = document.createElement('button');
-    colorButtonNode.textContent = color;
+    const imgNode = document.createElement('img');
+    imgNode.src = imgSrc[index];
+    // colorButtonNode.textContent = color;
     colorButtonNode.value = color;
     colorButtonNode.classList.add('color-button');
 
     colorButtonNode.addEventListener('click', function() {
-        paint(color);
+        const countSegments = document.querySelectorAll('.body-segment').length;
+        if(countSegments < 17) {
+            paint(color);
+        }
     });
-
+    colorButtonNode.appendChild(imgNode);
     colorButtonsNode.appendChild(colorButtonNode);
 }
 
