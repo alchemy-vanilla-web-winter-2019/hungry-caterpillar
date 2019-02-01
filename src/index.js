@@ -4,12 +4,20 @@ const danceButtonsNode = document.getElementById('dance-buttons');
 
 const fruits = ['apple', 'kiwi', 'banana', 'cherry'];
 
+const imgSrc = [
+    '../assets/apple.png',
+    '../assets/kiwi.png',
+    '../assets/banana.png',
+    '../assets/cherry.png'
+];
+
 for(let index = 0; index < fruits.length; index++) {
     let fruit = fruits[index];
     const fruitButtonNode = document.createElement('button');
+    const imgAdd = document.createElement('img');
+    imgAdd.src = imgSrc[index];
 
     fruitButtonNode.value = fruit;
-    fruitButtonNode.textContent = fruit;
     fruitButtonNode.classList.add(fruit, 'fruit-button');
 
     fruitButtonNode.addEventListener('click', function(){
@@ -18,6 +26,8 @@ for(let index = 0; index < fruits.length; index++) {
             paint(fruit);
         }
     });
+
+    fruitButtonNode.appendChild(imgAdd);
 
     fruitButtonsNode.appendChild(fruitButtonNode);
 }
