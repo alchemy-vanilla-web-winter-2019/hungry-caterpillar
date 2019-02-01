@@ -1,9 +1,41 @@
-#dragonhead {
-    width: 80px;
-    height: auto;
-    z-index: 5;
-}
-
 body {
     background: slategray;
+}
+#dragonhead {
+    width: 100px;
+    height: auto;
+    margin-right: -50px;
+}
+.scales {
+    position: absolute;
+}
+
+.scale {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 0px 0px 90px 0px;
+    width: 60px;
+    height: 60px;
+    margin: -20px;
+    transform: rotate(-45deg);
+}
+
+.chicken {
+    background: goldenrod;
+}
+
+.pig {
+    background: pink;
+}
+
+.cow {
+    background: brown;
+}
+
+.youth {
+    background: powderblue;
+}
+
+.warrior {
+    background: darkslategray;
 }
