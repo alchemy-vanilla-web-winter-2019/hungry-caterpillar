@@ -4,7 +4,6 @@ const mealButtons = document.getElementById('meal-buttons');
 const danceButtons = document.getElementById('dance-buttons');
 const scales = document.getElementById('scales');
 
-
 function makeScale(meal) {
     const scale = document.createElement('span');
     scale.classList.add('scale', meal);
@@ -12,11 +11,18 @@ function makeScale(meal) {
 }
 
 function makeDance(meal) {
-    //to make it dance, i need to:
-        //access the scale
-    const selected = '.scale' + meal;
-    console.log(selected)
-        //
+    const selected = '.scale.' + meal;
+    const scales = document.querySelectorAll(selected);
+    const allScales = document.querySelectorAll('.scale');
+
+    for(let i = 0; i < allScales.length; i++) {
+        const scale = allScales[i];
+        scale.classList.remove('dance');
+    }
+    for(let i = 0; i < scales.length; i++) {
+        const scale = scales[i];
+        scale.classList.add('dance');
+    }
 }
 
 for(let i = 0; i < meals.length; i++) {
@@ -29,12 +35,10 @@ for(let i = 0; i < meals.length; i++) {
     mealButtons.appendChild(mealButton);
 
     mealButton.addEventListener('click', function() {
-        console.log('clicked feed', meal);
         makeScale(meal);
     });
 }
 
-//let's make this bugger dance. First, make some buttons for dancing
 for(let i = 0; i < meals.length; i++) {
     const meal = meals[i];
     const danceButton = document.createElement('button');
@@ -47,5 +51,4 @@ for(let i = 0; i < meals.length; i++) {
     danceButton.addEventListener('click', function() {
         makeDance(meal);
     });
-
 }

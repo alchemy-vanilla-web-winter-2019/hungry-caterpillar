@@ -8,6 +8,12 @@ body {
     margin-right: -50px;
 }
 
+#dance-buttons {
+    margin-top: 50px;
+    padding: 5px;
+}
+
+
 .scales {
     position: absolute;
 }
@@ -15,16 +21,15 @@ body {
 .scale {
     display: inline-block;
     border: 1px solid black;
-    border-radius: 0px 0px 90px 0px;
+    border-radius: 0px 90px 0px 0px;
     width: 60px;
     height: 60px;
     margin: -20px;
     transform: rotate(-45deg);
 }
 
-#dance-buttons {
-    margin-top: 50px;
-    padding: 5px;
+.scale.dance {
+    transform: translate(10px, -10px);
 }
 
 .chicken {
