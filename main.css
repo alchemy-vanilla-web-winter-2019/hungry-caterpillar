@@ -3,8 +3,66 @@
     border: 0;
 }
 
+h1 {
+    text-align: center;
+}
+
+#feed-buttons {
+    margin: 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+#bug-body {
+    margin: 10px;
+    border: 2px solid black;
+}
+
+#dance-buttons {
+    margin: 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+#bug-head {
+    height: 100px;
+}
+
 .fruit-button {
     border: 2px solid black;
+    margin: 5px;
     height: 50px;
     width: 200px;
+}
+
+.Apple {
+    background: tomato;
+}
+
+.Pear {
+    background: greenyellow;
+}
+
+.Lemon {
+    background: khaki;
+}
+
+.Grape {
+    background: darkmagenta;
+}
+
+.Orange {
+    background: orange;
+}
+
+.Blueberry {
+    background: dodgerblue;
+}
+
+.section {
+    width: 50px;
+    height: 50px;
+    margin-left: -15px;
+    border-radius: 50%;
+    display: inline-block;
 }
