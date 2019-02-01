@@ -1,0 +1,40 @@
+#canvas {
+    height: 200px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+button {
+    margin: 5px;
+    border: 1px solid black;
+}
+
+img {
+    height: 35px;
+}
+
+#head {
+    height: 150px;
+}
+
+.body-segment {
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+}
+
+.red {
+    background: red;
+}
+
+.blue {
+    background: blue;
+}
+
+.green {
+    background: green;
+}
+
+.purple {
+    background: purple;
+}
