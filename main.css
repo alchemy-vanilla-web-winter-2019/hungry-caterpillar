@@ -7,8 +7,6 @@ h1, h2, p {
 }
 
 img {
-    display: flex;
-    justify-content: flex-start;
     height: 200px;
     width: 200px;
 }
@@ -19,6 +17,18 @@ img {
     margin: 10px 0 10px 20px;
     padding: 10px;
     border: 2px dashed dimgray;
+}
+
+.segment {
+    display: inline-block;
+    margin-left: -60px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: solid;
+    width: 115px;
+    height: 70px;
+    border-width: 2px;
+    border-radius: 50px 10px;
 }
 
 .red {
