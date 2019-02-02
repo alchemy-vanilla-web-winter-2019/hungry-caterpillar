@@ -1,15 +1,16 @@
-const meals = ['chicken', 'pig', 'cow', 'youth', 'warrior'];
-
 const mealButtons = document.getElementById('meal-buttons');
 const danceButtons = document.getElementById('dance-buttons');
 const scales = document.getElementById('scales');
+
+const meals = ['chicken', 'pig', 'cow', 'youth', 'warrior'];
+const mealImage = ['assets/chicken.png', 'assets/pig.png', 'assets/cow.png', 'assets/child.png', 'assets/warrior.png'];
+
 
 function makeScale(meal) {
     const scale = document.createElement('span');
     scale.classList.add('scale', meal);
     scales.appendChild(scale);
 }
-
 function makeDance(meal) {
     const selected = '.scale.' + meal;
     const scales = document.querySelectorAll(selected);
@@ -30,8 +31,9 @@ for(let i = 0; i < meals.length; i++) {
     const mealButton = document.createElement('button');
     
     mealButton.value = meal;
-    mealButton.textContent = meal;
+    mealButton.innerHTML = '<img src=' + mealImage[i] + '>';
     mealButton.classList.add('meal-button', meal);
+    
     mealButtons.appendChild(mealButton);
 
     mealButton.addEventListener('click', function() {

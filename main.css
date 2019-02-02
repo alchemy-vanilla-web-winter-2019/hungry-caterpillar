@@ -2,17 +2,27 @@ body {
     background: slategray;
 }
 
+img {
+    height: 30px;
+    width: auto;
+}
+
 #dragonhead {
     width: 100px;
     height: auto;
     margin-right: -50px;
 }
 
+.meal-button {
+    height: 45px;
+    width: 90px;
+    margin: 5px;
+}
+
 #dance-buttons {
     margin-top: 50px;
     padding: 5px;
 }
-
 
 .scales {
     position: absolute;
