@@ -3,6 +3,7 @@
  height: 300px;
  border: 1px dotted black;
  background: aquamarine;
+ margin-top: 20px;
 
 }
 
@@ -20,7 +21,19 @@ h1 {
     background-color:salmon;
     color: red;
     text-align: center;
+    border: 15px dotted yellowgreen;
+    padding: 10px;
     
+    
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: lawngreen
+}
+
+body {
+    background: tomato
 }
 
 .black {
@@ -41,14 +54,14 @@ h1 {
 }
 
 button {
-    background: black;
+    background: teal;
     color: white;
     
 }
 
 .wiggle-button {
     margin: 1px;
-    background: black;
+    background: teal;
     color: white;
 }
 

@@ -47,7 +47,7 @@ for(let index = 0; index < colors.length; index++) {
     const wiggleNodeButton = document.createElement('button');
     wiggleNodeButton.textContent = color;
     wiggleNodeButton.value = color;
-    wiggleNodeButton.classList.add(color, 'color-block');//
+    wiggleNodeButton.classList.add(color, 'wiggle-button');//
 
     wiggleNodeButton.addEventListener('click', function() {
         wiggle(color);
@@ -63,7 +63,7 @@ function wiggle(color) {
     const bodySegment = document.querySelectorAll(selector);
   
     const allBodySegments = document.querySelectorAll('.color-block');
-console.log(allBodySegments);
+
     for(let index = 0; index < allBodySegments.length; index++) {
         allBodySegments[index].classList.remove('dance-segment');
     }
