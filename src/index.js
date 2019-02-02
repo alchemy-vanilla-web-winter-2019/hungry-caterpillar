@@ -7,9 +7,11 @@ const uniKittyBody = document.getElementById('uniKitty')
 //adds color class to that element
 //appends that element to the dom parent (appendchild)
 
-function paintUniKitty() {
-    const uniKittyBody = document.createElement('span');
-    
+function paintUniKitty(color) {
+    const uniKittySegment = document.createElement('span');
+    uniKittySegment.classList.add('segment', color);
+    uniKittyBody.appendChild(uniKittySegment); 
+
     // uniKittyBody.classList.add('color-segment', color);
     // uniKittyBody.appendChild()
 }
