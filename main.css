@@ -8,8 +8,8 @@ h4 {
 #canvas{
     width: 600px;
     height: 125px;
-    overflow: none;
-   
+    overflow: hidden;
+    border: black 1px solid;
     margin: auto;
 }
 
