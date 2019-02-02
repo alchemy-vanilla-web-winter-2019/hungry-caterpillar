@@ -43,10 +43,15 @@ h1 {
 button {
     background: black;
     color: white;
+    
 }
 
 .wiggle-button {
     margin: 1px;
     background: black;
     color: white;
+}
+
+.dance-segment {
+    margin-bottom: 25px;
 }
