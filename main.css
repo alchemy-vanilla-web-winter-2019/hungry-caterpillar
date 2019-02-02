@@ -8,13 +8,13 @@ img {
 }
 
 #dragonhead {
-    width: 100px;
+    width: 150px;
     height: auto;
     margin-right: -50px;
 }
 
 .meal-button {
-    height: 45px;
+    height: 55px;
     width: 90px;
     margin: 5px;
 }
@@ -30,16 +30,26 @@ img {
 
 .scale {
     display: inline-block;
-    border: 1px solid black;
-    border-radius: 0px 90px 0px 0px;
-    width: 60px;
-    height: 60px;
+    /* border: 1px solid black; */
+    border-radius: 90px 0px 90px 0px;
+    width: 90px;
+    height: 70px;
     margin: -20px;
-    transform: rotate(-45deg);
 }
 
 .scale.dance {
-    transform: translate(10px, -10px);
+    /* transform: translate(10px, -20px); */
+    /* transform: rotate(45deg); */
+    -webkit-animation: rotation 1.5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		} 
 }
 
 .chicken {
