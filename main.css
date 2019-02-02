@@ -1,0 +1,42 @@
+.create-span {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+
+#cater-face {
+  height: 80px;
+  width: 80px;
+}
+
+#caterpillar-container {
+  padding: 30px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.plum-span {
+  background-color: purple;
+}
+
+.fig-span {
+  background-color: brown;
+}
+
+.strawberry-span {
+  background-color: red;
+}
+
+.blackberry-span {
+  background-color: black;
+}
+
+#dance-button-container {
+  padding: 30px;
+}
+
+.make-dance {
+  transform: translate(0px, 50%);
+}
+
+
