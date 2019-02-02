@@ -38,8 +38,6 @@ img {
 }
 
 .scale.dance {
-    /* transform: translate(10px, -20px); */
-    /* transform: rotate(45deg); */
     -webkit-animation: rotation 1.5s infinite linear;
 }
 
