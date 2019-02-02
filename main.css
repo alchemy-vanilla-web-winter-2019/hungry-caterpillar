@@ -30,3 +30,13 @@
 .blackberry-span {
   background-color: black;
 }
+
+#dance-button-container {
+  padding: 30px;
+}
+
+.make-dance {
+  transform: translate(0px, 50%);
+}
+
+
