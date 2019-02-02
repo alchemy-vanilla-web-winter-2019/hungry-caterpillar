@@ -1,0 +1,34 @@
+/* fruit array- apple, banana, orange*/
+.apple {
+    background-color: rgb(109, 14, 14);
+}
+
+.banana {
+    background-color: rgb(61, 177, 57);
+}
+
+.orange {
+    background-color: orange;
+}
+
+#cater-head {
+    width: 100px;
+}
+
+.fruit-button {
+    height: 20px;
+    color: black;
+}
+
+#canvas {
+    height: 200px;
+    width: 200ps;
+    overflow: hidden;
+}
+
+.fruit-span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+}
