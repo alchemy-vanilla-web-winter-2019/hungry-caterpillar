@@ -1,6 +1,7 @@
 const mealButtons = document.getElementById('meal-buttons');
 const danceButtons = document.getElementById('dance-buttons');
 const scales = document.getElementById('scales');
+const reset = document.getElementById('reset');
 
 const meals = ['chicken', 'pig', 'cow', 'youth', 'warrior'];
 const mealImage = ['assets/chicken.png', 'assets/pig.png', 'assets/cow.png', 'assets/child.png', 'assets/warrior.png'];
@@ -54,3 +55,7 @@ for(let i = 0; i < meals.length; i++) {
         makeDance(meal);
     });
 }
+
+reset.addEventListener('click', function() {
+    location.reload();
+});
