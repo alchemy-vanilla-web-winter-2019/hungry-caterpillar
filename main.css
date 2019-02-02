@@ -1,0 +1,71 @@
+body {
+    background: slategray;
+}
+
+img {
+    height: 30px;
+    width: auto;
+}
+
+#dragonhead {
+    width: 150px;
+    height: auto;
+    margin-right: -50px;
+}
+
+.meal-button {
+    height: 55px;
+    width: 90px;
+    margin: 5px;
+}
+
+#dance-buttons {
+    margin-top: 50px;
+    padding: 5px;
+}
+
+.scales {
+    position: absolute;
+}
+
+.scale {
+    display: inline-block;
+    /* border: 1px solid black; */
+    border-radius: 90px 0px 90px 0px;
+    width: 90px;
+    height: 70px;
+    margin: -20px;
+}
+
+.scale.dance {
+    -webkit-animation: rotation 1.5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		} 
+}
+
+.chicken {
+    background: goldenrod;
+}
+
+.pig {
+    background: pink;
+}
+
+.cow {
+    background: brown;
+}
+
+.youth {
+    background: powderblue;
+}
+
+.warrior {
+    background: darkslategray;
+}
