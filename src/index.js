@@ -16,10 +16,15 @@ for(let index = 0; index < foods.length; index++){
     foodButtons.classList.add('food-button', food, food + '-button');
 
     foodButtons.addEventListener('click', function(){
-        const bodySpan = document.createElement('span');
-        bodyCanvasNode.appendChild(bodySpan);
-        bodySpan.classList.add('body-span', food + '-span', food);
+        feed(food);
     });
+    
+}
+
+function feed(food){
+    const bodySpan = document.createElement('span');
+    bodyCanvasNode.appendChild(bodySpan);
+    bodySpan.classList.add('body-span', food + '-span', food);
 
 }
 
@@ -49,4 +54,5 @@ for(let i = 0; i < foods.length; i++){
 
 
 }
-  
+
+
