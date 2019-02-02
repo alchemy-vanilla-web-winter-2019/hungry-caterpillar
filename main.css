@@ -1,0 +1,76 @@
+body {
+    text-align: center;
+}
+
+section {
+    width: 50%;
+    margin: auto;
+    
+}
+
+footer {
+    margin-top: 100px;
+}
+#caterpillar {
+    width: 500px;
+    height: 100px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#cater-head {
+    height:100px;
+    width: auto;
+}
+
+.fruity-button {
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.fruit-div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: -15px;
+}
+
+
+.carrot {
+    background-color: orange;
+}
+
+.tomato {
+    background-color: #db481f;
+}
+
+.cucumber {
+    background-color: #1b9606;
+}
+
+.eggplant {
+    background-color:#220059;
+}
+
+.lettuce {
+    background-color: #91c958;
+}
+
+.broccoli {
+    background-color: #137003;
+}
+
+.dance {
+    transform: translate(0px, -50%);
+}
+
+.dance-button {
+    background-color: hotpink;
+    color: white;
+    font-size: 20px;
+}
