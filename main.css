@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#caterpillar {
+    margin: 50px;
+}
+
+#cater-face {
+    margin: -8px;
+    height: 75px;
+}
+
+.garbage-buttons {
+    margin: 5px;
+}
+
+.apple {
+    background-color: rgb(110, 42, 21);
+    color: white;
+}
+
+.kiwi {
+    background-color: gray;
+    color: white;
+}
+
+.pear {
+    background-color: rgb(54, 51, 51);
+    color: white;
+}
+
+.grape {
+    background-color: rgb(155, 121, 29);
+    color: white;
+}
+
+.raspberry {
+    background-color: olive;
+    color: white;
+}
+
+.garbage-span {
+    display: inline-block;
+    margin: -3px;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+}
