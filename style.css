@@ -9,9 +9,10 @@ header {
     text-transform: capitalize;
     font-weight: bold;
     color: white;
-    height: 50px;
-    width: 100px;
+    height: 100px;
+    width: 150px;
     margin: 2px;
+    border-radius: 15%;
 }
 
 /* Fruits */
@@ -31,12 +32,19 @@ header {
     background-color: darkmagenta;
 }
 
+.fruit-image{
+    height: 75%;
+    border-radius: 20%;
+}
+
 /* Caterpillar */
-img {
+#head {
     margin-right: -10px;
+
 }
 #caterpillar {
-    height: 250px;
+    height: auto;
+    width: auto;
 }
 .segment {
     display: inline-block;
