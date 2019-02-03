@@ -1,19 +1,25 @@
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple'];
 const colorButtons = document.getElementById('color-buttons');
-const uniKittyBody = document.getElementById('uniKitty')
-
-//function that takes color
-//creates a span element
-//adds color class to that element
-//appends that element to the dom parent (appendchild)
+const uniKittyBody = document.getElementById('uniKitty');
+const danceButtons = document.getElementById('dance-buttons');
 
 function paintUniKitty(color) {
     const uniKittySegment = document.createElement('span');
     uniKittySegment.classList.add('segment', color);
     uniKittyBody.appendChild(uniKittySegment); 
+}
 
-    // uniKittyBody.classList.add('color-segment', color);
-    // uniKittyBody.appendChild()
+function danceUniKitty(color) {
+    const uniKittySegment = '.segment.' + color;
+    const danceSegment = document.querySelectorAll(uniKittySegment);
+    const danceSegments = document.querySelectorAll('.segment');
+
+    for(let i = 0; i < danceSegments.length; i++) {
+        danceSegments[i].classList.remove('dance');
+    }
+    for(let i = 0; i < danceSegment.length; i++) {
+        danceSegment[i].classList.add('dance');
+    }
 }
 
 for(let i = 0; i < colors.length; i++) {
@@ -26,23 +32,16 @@ for(let i = 0; i < colors.length; i++) {
     colorButton.addEventListener('click', function() {
         paintUniKitty(color);
     });
-
-    // iterate over each color to ...
-        // create a button element - done
-        // have text show up - done
-        // append - done
-        // assign classes - done    
-        // eventListener with function to add segment
 }
-console.log('body span', uniKittyBody);
+
 for(let i = 0; i < colors.length; i++) {
     const color = colors[i];
-    console
+    const danceButton = document.createElement('button');
+    danceButton.textContent = color;
+    danceButtons.appendChild(danceButton);
+    danceButton.classList.add('dance-button', color);
 
-    // iterate over each color to ...
-        // create a button element
-        // have text show up
-        // append
-        // assign classes
-        // eventListener with function to make segment dance
+    danceButton.addEventListener('click', function() {
+        danceUniKitty(color);
+    });
 }
