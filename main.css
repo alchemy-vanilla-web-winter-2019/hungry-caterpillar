@@ -13,7 +13,7 @@
 }
 
 #bug-body {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -36,4 +36,8 @@
 .bug-head {
     width: 75px;
     margin-right: -5px;
+}
+
+.dance {
+    transform: translate(-1px, -10px);
 }

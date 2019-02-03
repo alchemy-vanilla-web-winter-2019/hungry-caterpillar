@@ -8,17 +8,23 @@ const danceButtons = document.getElementById('dance-buttons');
 
 //---------------- F U N C T I O N S --------------------\\
 
-function feed(runsfruitfromloop) {
+function feed(fruit) {
     const bodyParts = document.createElement('span');
-    bodyParts.classList.add('body-parts', runsfruitfromloop);
+    bodyParts.classList.add('body-parts', fruit);
     bugBody.appendChild(bodyParts);
 }
 
-//-- build DANCE function to make dance
-
-    //-- combine bodyParts & dance fruit button(fruit)
-    
-    //-- build a for loop over the node list from qselector then add class dance
+function dance(fruit) {
+    const dancing = '.body-parts.' + fruit;
+    const selectedPart = document.querySelectorAll(dancing);
+    const allParts = document.querySelectorAll('.body-parts')
+    for(let i = 0; i < allParts.length; i++) {
+        allParts[i].classList.remove('dance');
+    }
+    for(let i = 0; i < selectedPart.length; i++) {
+        selectedPart[i].classList.add('dance');
+    }
+}
     
 //-------------------- L O O P S ----------------------\\
 
