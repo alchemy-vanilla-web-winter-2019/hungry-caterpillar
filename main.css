@@ -32,16 +32,11 @@ img {
     width: 115px;
     height: 70px;
     border-width: 1px;
-    border-radius: 50px 10px;
+    border-radius: 40% 40% 10% 40%;
 }
 
-.reset {
-    font-family: courier;
-    font-size: 15px;
-    margin: 10px 0 10px 20px;
-    padding: 10px;
-    border: 2px dashed dimgray;
-    background: #02B6CF;
+.dance {
+    transform: rotate(40deg);
 }
 
 .red {
@@ -67,4 +62,3 @@ img {
 .purple {
     background: mediumpurple;
 }
-
