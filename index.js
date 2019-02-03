@@ -1,12 +1,7 @@
-//-------- G L O B A L -- V A R I A B L E S --------\\
-
 const fruitArray = ['apple', 'grape', 'banana', 'orange'];
 const fruitButtons = document.getElementById('fruit-buttons');
 const bugBody = document.getElementById('bug-body');
 const danceButtons = document.getElementById('dance-buttons');
-
-
-//---------------- F U N C T I O N S --------------------\\
 
 function feed(fruit) {
     const bodyParts = document.createElement('span');
@@ -26,8 +21,6 @@ function dance(fruit) {
     }
 }
     
-//-------------------- L O O P S ----------------------\\
-
 for(let i = 0; i < fruitArray.length; i++) {
     let fruit = fruitArray[i];
     const fruitButton = document.createElement('button');
