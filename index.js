@@ -1,33 +1,27 @@
 //-------- G L O B A L -- V A R I A B L E S --------\\
 
-//---- 1. create fruit array
 const fruitArray = ['apple', 'grape', 'banana', 'orange'];
 const fruitButtons = document.getElementById('fruit-buttons');
 const bugBody = document.getElementById('bug-body');
-
-
-
-
+const danceButtons = document.getElementById('dance-buttons');
 
 
 //---------------- F U N C T I O N S --------------------\\
 
-
 function feed(runsfruitfromloop) {
-    console.log(runsfruitfromloop);
     const bodyParts = document.createElement('span');
     bodyParts.classList.add('body-parts', runsfruitfromloop);
     bugBody.appendChild(bodyParts);
-    console.log(bodyParts);
 }
 
+//-- build DANCE function to make dance
 
+    //-- combine bodyParts & dance fruit button(fruit)
     
+    //-- build a for loop over the node list from qselector then add class dance
     
 //-------------------- L O O P S ----------------------\\
 
-
-//---- 2.for loop to build out buttons from Array using index
 for(let i = 0; i < fruitArray.length; i++) {
     let fruit = fruitArray[i];
     const fruitButton = document.createElement('button');
@@ -40,8 +34,15 @@ for(let i = 0; i < fruitArray.length; i++) {
         
     });
 }
-    
-    
-    
-    
-    
+
+for(let i = 0; i < fruitArray.length; i++) {
+    let fruit = fruitArray[i];
+    const danceButton = document.createElement('button');
+    danceButtons.appendChild(danceButton);
+    danceButton.textContent = fruit;
+    danceButton.value = fruit;
+    danceButton.classList.add('dance-button', fruit);
+    danceButton.addEventListener('click', function(){
+        dance(fruit);
+    });
+}
