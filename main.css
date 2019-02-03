@@ -1,0 +1,39 @@
+.fruit-button {
+    padding: 6px;
+    margin-right: 8px;
+}
+
+.body-parts {
+    display: inline-block;
+    border: .5px black solid;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: -3px;
+}
+
+#bug-body {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.apple {
+    background: red;
+}
+
+.grape {
+    background:rgb(237, 46, 237);
+}
+
+.banana {
+    background:yellow;
+}
+
+.orange {
+    background:orange;
+}
+
+.bug-head {
+    width: 75px;
+    margin-right: -5px;
+}
