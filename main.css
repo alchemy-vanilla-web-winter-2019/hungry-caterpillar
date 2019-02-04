@@ -1,0 +1,120 @@
+body {
+    margin: 10px;
+    background: tomato;
+    text-align: center;
+}
+
+
+#canvas {
+ width: 600px;
+ height: 300px;
+ border: 1px dotted black;
+ background: aquamarine;
+ margin-top: 5px;
+ display: inline-block;
+ 
+
+
+}
+
+
+h1 {
+
+    font-family: fantasy;
+    background-color:salmon;
+    color: red;
+    text-align: center;
+    border: 15px dotted yellowgreen;
+    padding: 5px;
+    text-shadow: 1px 1px 3px purple; 
+    width: 600px;
+    display: inline-block;
+    border-radius: 15px;
+   
+
+    
+    
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: lawngreen;
+    margin: 0ch;
+}
+
+
+
+.brain {
+    background: tomato;
+}
+
+
+
+.chicken {
+    background: plum;
+}
+
+.sausage{
+
+    background: palevioletred
+}
+
+.shrimp {
+    background: pink;
+}
+
+.steak {
+    background: indianred;
+}
+button {
+    background: white;
+    color:red;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 3px;
+    
+    
+    
+}
+
+.wiggle-button {
+
+    background: teal;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+.body-length {
+    height: 110px;
+    width: 110px;
+    display: inline-block;
+    border-radius: 150px;
+    margin-top: 50px;
+    margin-right: -25px;
+}
+
+.dance-segment {
+    margin-bottom: 25px;
+    border-radius: 100px;
+    height: 120px; 
+    width: 120px;
+    margin-left: -25px;
+}
+
+img {
+    width: 25px;
+    height: 30px;
+    margin: 5px;
+}
+
+#worm-head {
+    height: 150px;
+    width: auto;
+    margin-top: 60px;
+    border-radius: 150px;
+    margin-left: 5px;
+    margin-right: -40px;
+    /* z-index: ; */
+    position: relative;
+}
