@@ -1,40 +1,48 @@
+body {
+    margin: 10px;
+    background: tomato;
+    text-align: center;
+}
+
+
 #canvas {
  width: 600px;
  height: 300px;
  border: 1px dotted black;
  background: aquamarine;
- margin-top: 20px;
+ margin-top: 5px;
+ display: inline-block;
+ 
+
 
 }
 
-/* .color-block {
-    height: 120px;
-    width: 120px;
-    display: inline-block;
-    border-radius: 150px;
-    margin-top: 50px;
-    margin-right: -25px;
-} */
 
 h1 {
+
     font-family: fantasy;
     background-color:salmon;
     color: red;
     text-align: center;
     border: 15px dotted yellowgreen;
-    padding: 10px;
+    padding: 5px;
+    text-shadow: 1px 1px 3px purple; 
+    width: 600px;
+    display: inline-block;
+    border-radius: 15px;
+   
+
     
     
 }
 
 h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: lawngreen
+    color: lawngreen;
+    margin: 0ch;
 }
 
-body {
-    background: tomato;
-}
+
 
 .brain {
     background: tomato;
@@ -59,15 +67,22 @@ body {
     background: indianred;
 }
 button {
-    background: teal;
-    color: white;
+    background: white;
+    color:red;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 3px;
+    
+    
     
 }
 
 .wiggle-button {
-    margin: 1px;
+
     background: teal;
     color: white;
+    border-radius: 10px;
+    
 }
 
 .body-length {
@@ -81,10 +96,10 @@ button {
 
 .dance-segment {
     margin-bottom: 25px;
-    /* border-radius: 100px;
+    border-radius: 100px;
     height: 120px; 
     width: 120px;
-    margin-left: -25px; */
+    margin-left: -25px;
 }
 
 img {
