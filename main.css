@@ -1,0 +1,161 @@
+
+@font-face {
+    font-family: DoubleFeature;
+    src: url(./assets/DoubleFeature20.ttf);
+}
+
+body {
+    background-color: #1bff0f;
+}
+
+header {
+    background-color: yellow;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    font-family: DoubleFeature;
+    color: red;
+}
+
+#feed-text {
+    font-family: DoubleFeature;
+    text-align: center;
+}
+
+#dance-text {
+    font-family: DoubleFeature;
+    text-align: center;
+}
+
+#button-text {
+    font-family: DoubleFeature;
+    text-align: center;
+}
+
+#Audrey {
+    width: 500px;
+    background-image: url(./assets/Checkerboard-Floor.jpg);
+    position: relative;
+    z-index: -3;
+
+
+}
+#audrey-head {
+    width: 300px;
+    margin-left: 100px;
+    margin-bottom: -20px;
+}
+
+#audrey-base {
+    width: 500px;
+    margin-top: -20px;
+    position: relative;
+    z-index: -1;
+}
+
+#audrey-body {
+    /* border: 2px solid black; */
+    width: 60px;
+    margin-left: 220px;
+    position: relative;
+    z-index: -2;
+}
+
+
+
+.button-section {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+  
+    padding-bottom: 50px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.stem {
+    height: 100px;
+    width: 150px;
+}
+
+.Dentist {
+    background-color: blue;
+    color: white;
+}
+
+.Mushnik {
+    background-color: orangered;
+    color: white;
+}
+
+.Audrey {
+    background-color:#de0fff;
+    color: white;
+}
+
+.Seymour {
+    background-color:#ff6b0f;
+    color: white;
+}
+
+.stem-block {
+    margin: -5px;
+    width: 75px;
+    height: 60px;
+    display: inline-block;
+}
+
+.transform {
+    animation: swing 1s ease;
+    animation-iteration-count: 1;
+}
+
+.transform-button{
+    height: 100px;
+    width: 150px;
+}
+
+
+
+
+/* animation learned/borrowed from https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/ */
+
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(6px);
+        transform: translateX(6px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
