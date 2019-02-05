@@ -1,0 +1,104 @@
+h1 {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+
+#canvas{
+    width: 600px;
+    height: 125px;
+    overflow: hidden;
+    border: black 1px solid;
+    margin: auto;
+}
+
+#food-buttons{
+    text-align: center;
+    margin: 15px;
+}
+#dance-buttons{
+    text-align: center;
+    margin: 15px;
+
+}
+
+
+#face{
+    height: 125px;
+}
+
+.food-button{
+    height: 75px;
+    width: 100px;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 12%
+}
+.pickle-button{
+    background-image: url(/assets/pickle.jpg);
+    background-size: cover;
+}
+
+.chocolate-button{
+    background-image: url(/assets/chocolate.png);
+    background-size: cover;
+}
+.cake-button{
+    background-image: url(/assets/cake.png);
+    background-size: cover;
+}
+.watermelon-button{
+    background-image: url(/assets/watermelon.jpg);
+    background-size: cover;
+}
+.cheese-button{
+    background-image: url(/assets/cheese.jpg);
+    background-size: cover;
+}
+.sausage-button{
+    background-image: url(/assets/sausage.png);
+    background-size: cover;
+}
+
+.pickle{
+    background-color: green;
+}
+
+.chocolate{
+    background-color: chocolate;
+}
+
+.cake{
+    background-color: whitesmoke;
+}
+
+.watermelon{
+    background-color: pink;
+}
+
+.cheese{
+    background-color: yellow;
+}
+
+.sausage{
+    background-color: sienna;
+}
+
+.body-span{
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: -3px;
+
+}
+
+.dance-button{
+    border-radius: 12px;
+    height: 30px;
+}
+
+.dance-span{
+    transform: translate(0px, -50%);
+}
