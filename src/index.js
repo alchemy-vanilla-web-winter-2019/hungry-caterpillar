@@ -2,7 +2,7 @@ const foods = ['pickle', 'chocolate', 'cake', 'watermelon', 'cheese', 'sausage']
 
 const foodButtonsNode = document.getElementById('food-buttons');
 const bodyCanvasNode = document.getElementById('canvas');
-const danceButtonsNode = document.getElementById('dance-buttons')
+const danceButtonsNode = document.getElementById('dance-buttons');
 
 
 for(let index = 0; index < foods.length; index++){
@@ -40,13 +40,13 @@ for(let i = 0; i < foods.length; i++){
     danceButtons.addEventListener('click', function(){
         // first loop through food spans and remove 'dance-span' to reset.
         var danceSpanArray = document.querySelectorAll('.body-span');
-        for(let l = 0; l < foods.length; l++){
+        for(let l = 0; l < danceSpanArray.length; l++){
             danceSpanArray[l].classList.remove('dance-span');
         }
     
         //loop through food spans and apply 'dance-span' css property.
         var danceSpan = document.querySelectorAll('.' + food + '-span');
-        for(let i = 0; i < foods.length; i++){
+        for(let i = 0; i < danceSpan.length; i++){
             danceSpan[i].classList.add('dance-span');
         }
         
