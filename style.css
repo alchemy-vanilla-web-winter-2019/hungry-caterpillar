@@ -9,8 +9,9 @@ header {
     text-transform: capitalize;
     font-weight: bold;
     color: white;
-    height: 100px;
-    width: 150px;
+    font-size: 0.75em;
+    height: 60px;
+    width: 90px;
     margin: 2px;
     border-radius: 15%;
 }

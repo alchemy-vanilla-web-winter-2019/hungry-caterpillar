@@ -6,10 +6,10 @@ const fruitList = [
     'mangosteen'
 ];
 
-makeButtons(fruitList, document.getElementById('fruit-field'));
-makeButtons(fruitList, document.getElementById('dance-field'));
+main(fruitList, document.getElementById('fruit-field'));
+main(fruitList, document.getElementById('dance-field'));
 
-function makeButtons(list, element) {
+function main(list, element) {
     // Create buttoms
     for(let i = 0; i < list.length; i++) {
         const listItem = list[i];
@@ -20,28 +20,36 @@ function makeButtons(list, element) {
 
         // Place fruit image on button
         if(element.id === 'fruit-field') {
-            const pic = document.createElement('img');
-            pic.src = './assets/' + listItem + '.jpg';
-            pic.classList.add('fruit-image');
-            button.textContent = '';
-            button.appendChild(pic);
+            insertIcon(button, listItem);
         }
-        
+
         // Button functionality
         button.addEventListener('click', function() {
-            switch(element.id) {
-                case 'fruit-field':
-                    addBody(listItem);
-                    break;
-                case 'dance-field':
-                    dance(listItem);
-                    break;
-            }
+            buttonAction(element, listItem);
         });
     }
 }
 
+function insertIcon(button, listItem) {
+    const buttonIcon = document.createElement('img');
+    buttonIcon.src = './assets/' + listItem + '.jpg';
+    buttonIcon.classList.add('fruit-image');
+    button.textContent = '';
+    button.appendChild(buttonIcon);
+}
 
+function buttonAction(element, listItem) {            
+    switch(element.id) {
+        case 'fruit-field':
+            addBody(listItem);
+            break;
+        case 'dance-field':
+            dance(listItem);
+            break;
+    }
+}
+
+// Add body segment on caterpillar
 function addBody(fruit) {
     const segment = document.createElement('span');
     segment.classList.add('segment', fruit);
@@ -49,12 +57,20 @@ function addBody(fruit) {
 }
 
 function dance(fruit) {
-    // Reset Position by removing 'dance' class
-    const selectAll = document.querySelectorAll('.dance');
-    for(let i = 0; i < selectAll.length; i++) {
-        selectAll[i].classList.remove('dance');
+    reset();
+    move(fruit);
+}
+
+// Reset Position by removing 'dance' class from all segments
+function reset() {
+    const allSegments = document.querySelectorAll('.dance');
+    for(let i = 0; i < allSegments.length; i++) {
+        allSegments[i].classList.remove('dance');
     }
-    // Add 'dance' class to selected segments (Moves segments up)
+}
+
+// Add 'dance' class to selected segments to move them up
+function move(fruit) {
     const selector = '.segment.' + fruit;
     const selectedSegments = document.querySelectorAll(selector);
     for(let i = 0; i < selectedSegments.length; i++) {
