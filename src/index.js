@@ -9,10 +9,6 @@ const fruitButtonsNode = document.getElementById('fruit-buttons');
 //DOM canvas
 const canvasNode = document.getElementById('canvas');
 
-
-//insert the head of caterpillar
-const image = document.getElementById('cater-head');
-
 //create button in js
     // const fruitButton = document.createElement('button');
     // fruitButtonsNode.appendChild(fruitButton);
