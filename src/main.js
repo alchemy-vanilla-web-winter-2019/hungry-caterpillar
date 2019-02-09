@@ -13,10 +13,7 @@ function main(list, element) {
     // Create buttoms
     for(let i = 0; i < list.length; i++) {
         const listItem = list[i];
-        const button = document.createElement('button');
-        button.classList.add('button', listItem);
-        button.textContent = listItem;
-        element.appendChild(button);
+        const button = makeButton(element, listItem);
 
         // Place fruit image on button
         if(element.id === 'fruit-field') {
@@ -28,6 +25,14 @@ function main(list, element) {
             buttonAction(element, listItem);
         });
     }
+}
+
+function makeButton(element, listItem) {
+    const button = document.createElement('button');
+    button.classList.add('button', listItem);
+    button.textContent = listItem;
+    element.appendChild(button);
+    return button;
 }
 
 function insertIcon(button, listItem) {
