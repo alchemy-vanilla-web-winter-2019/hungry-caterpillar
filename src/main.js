@@ -1,19 +1,22 @@
-const fruitList = [
-    'coconut',
-    'jackfruit',
-    'rambutan',
-    'guava',
-    'mangosteen'
-];
+main();
 
-main(fruitList, document.getElementById('fruit-field'));
-main(fruitList, document.getElementById('dance-field'));
+function main() {
+    const fruitList = [
+        'coconut',
+        'jackfruit',
+        'rambutan',
+        'guava',
+        'mangosteen'
+    ];
+    makeButtons(fruitList, document.getElementById('fruit-field'));
+    makeButtons(fruitList, document.getElementById('dance-field'));
+}
 
-function main(list, element) {
+function makeButtons(list, element) {
     // Create buttoms
     for(let i = 0; i < list.length; i++) {
         const listItem = list[i];
-        const button = makeButton(element, listItem);
+        const button = makeButtonEl(element, listItem);
 
         // Place fruit image on button
         if(element.id === 'fruit-field') {
@@ -27,7 +30,7 @@ function main(list, element) {
     }
 }
 
-function makeButton(element, listItem) {
+function makeButtonEl(element, listItem) {
     const button = document.createElement('button');
     button.classList.add('button', listItem);
     button.textContent = listItem;
@@ -76,8 +79,7 @@ function reset() {
 
 // Add 'dance' class to selected segments to move them up
 function move(fruit) {
-    const selector = '.segment.' + fruit;
-    const selectedSegments = document.querySelectorAll(selector);
+    const selectedSegments = document.querySelectorAll('.segment.' + fruit);
     for(let i = 0; i < selectedSegments.length; i++) {
         selectedSegments[i].classList.add('dance');
     }
