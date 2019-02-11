@@ -1,0 +1,66 @@
+h1 {
+    font-family: monospace;
+}
+
+p {
+    font-family: monospace;
+}
+
+#canvas {
+    height: 100px;
+    width: 400px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.red {
+    background: red;
+}
+
+.blue {
+    background: blue;
+}
+
+.green {
+    background: green;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.body-segment {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-left: -5px;
+}
+
+.dance-segment {
+    margin-bottom: 10px;
+}
+
+img {
+    width: 20px;
+    margin: 5px;
+}
+
+.color-button {
+    margin-right: 20px;
+    height: 30px;
+    width: 60px;
+}
+
+#caterpillar-head {
+    height: 50px;
+    width: 50px;
+    margin-right: -5px;
+    display: flex;
+    align-items: center
+}
+
+.transform-button {
+    margin-right: 20px;
+}
