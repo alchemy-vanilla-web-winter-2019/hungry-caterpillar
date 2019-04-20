@@ -1,7 +1,7 @@
 Hungry Caterpillar
 ===
 
-Make the caterpillar grow by feeding it fruit, and then up a fruit dance.
+Make the caterpillar grow by feeding it fruit, and then up a fruit dance!
 
 [Note: feel free to change the topic. For example you could feed the hungry sarlacc 
 things like Jabba's minions, Boba Fett, Hans Solo, Lando, etc.]
